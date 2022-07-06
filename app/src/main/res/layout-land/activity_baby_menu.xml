@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context=".BabyMenu"
+        android:layout_margin="20dp">
+
+    <TextView
+            android:text="Младенцы до года"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/headerTeenagers"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="24sp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"/>
+
+    <Button
+            android:text="Высокая температура"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:id="@+id/buttonLater2"
+            app:layout_constraintTop_toBottomOf="@+id/headerTeenagers"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/buttonBabySkin"
+            android:backgroundTint="@color/sky"
+            app:layout_constraintEnd_toStartOf="@+id/buttonBabySlip"
+            android:layout_marginStart="24dp"/>
+
+    <Button
+            android:text="Кожные нарушения"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:id="@+id/buttonBabySkin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/buttonBabyWeight"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLater2"
+            android:backgroundTint="@color/sky"
+            app:layout_constraintEnd_toStartOf="@+id/buttonBabyVomiyus"
+            android:layout_marginStart="24dp"/>
+
+    <Button
+            android:text="Медленная прибавка в весе"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:id="@+id/buttonBabyWeight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/buttonBabyToilet"
+            app:layout_constraintTop_toBottomOf="@+id/buttonBabySkin"
+            android:backgroundTint="@color/sky"
+            app:layout_constraintEnd_toStartOf="@+id/buttonBabyEating"
+            android:layout_marginStart="24dp"/>
+
+    <Button
+            android:text="Понос"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:id="@+id/buttonBabyToilet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonBabyWeight"
+            android:backgroundTint="@color/sky"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonBabyCrying"
+            android:layout_marginStart="24dp"/>
+
+    <Button
+            android:text="Пробуждение по ночам"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:id="@+id/buttonBabySlip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/buttonBabyVomiyus"
+            android:backgroundTint="@color/sky"
+            app:layout_constraintTop_toBottomOf="@+id/headerTeenagers"
+            app:layout_constraintStart_toEndOf="@+id/buttonLater2"
+            android:layout_marginEnd="24dp"/>
+
+    <Button
+            android:text="Рвота"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:id="@+id/buttonBabyVomiyus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/buttonBabyEating"
+            app:layout_constraintTop_toBottomOf="@+id/buttonBabySlip"
+            android:backgroundTint="@color/sky"
+            app:layout_constraintStart_toEndOf="@+id/buttonBabySkin"
+            android:layout_marginEnd="24dp"/>
+
+    <Button
+            android:text="Трудности кормления"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:id="@+id/buttonBabyEating"
+            app:layout_constraintBottom_toTopOf="@+id/buttonBabyCrying"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonBabyVomiyus"
+            android:backgroundTint="@color/sky"
+            app:layout_constraintStart_toEndOf="@+id/buttonBabyWeight"
+            android:layout_marginEnd="24dp"/>
+
+    <Button
+            android:text="Чрезмерный плач"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:id="@+id/buttonBabyCrying"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonBabyEating"
+            android:backgroundTint="@color/sky"
+            app:layout_constraintStart_toEndOf="@+id/buttonBabyToilet"
+            android:layout_marginEnd="24dp"/>
+</android.support.constraint.ConstraintLayout>

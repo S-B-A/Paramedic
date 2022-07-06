@@ -2,5 +2,7 @@
     <string name="app_name">Paramedic</string>
     <string name="nameofapp">Парамедик</string>
     <string name="menuPoint1">Младенцы до года</string>
+    <string name="menuPoint2">Дети всех возрастов</string>
+    <string name="menuPoint3">Подростки</string>
     <string name="apps_icon">Icon of the aplication</string>
 </resources>

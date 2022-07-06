@@ -10,6 +10,15 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.Paramedic">
         <activity
+                android:name=".TeensMenu"
+                android:exported="true"/>
+        <activity
+                android:name=".KidsMenu"
+                android:exported="true"/>
+        <activity
+                android:name=".BabyMenu"
+                android:exported="true"/>
+        <activity
                 android:name=".MainActivity"
                 android:exported="true">
             <intent-filter>
